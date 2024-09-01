@@ -21,7 +21,7 @@ class WordsFinder:
         for file_names, words in self.get_all_words().items():
             for i in range(len(words)):
                 if words[i] == word.lower():
-                    ura_words[file_names] = i
+                    ura_words[file_names] = i + 1
                     break
         return ura_words
 
